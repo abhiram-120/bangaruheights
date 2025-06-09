@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XJDZW98WQZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XJDZW98WQZ');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bangaru Heights - Luxurious 3BHK Apartments in Palakolu</title>
@@ -8,8 +19,10 @@
     <style>
         /* --- Reset & Base Styles --- */
         :root {
-            --primary-color: #1a237e; /* Deep Indigo */
-            --secondary-color: #ffab00; /* Amber/Gold Accent */
+            --primary-color: #1a237e;
+            /* Deep Indigo */
+            --secondary-color: #ffab00;
+            /* Amber/Gold Accent */
             --light-bg: #f8f9fa;
             --dark-text: #343a40;
             --light-text: #f8f9fa;
@@ -131,7 +144,7 @@
             padding: 10px 0;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
-        
+
         .navbar-container {
             display: flex;
             justify-content: space-between;
@@ -145,6 +158,7 @@
             text-decoration: none;
             letter-spacing: -1px;
         }
+
         .logo span {
             color: var(--secondary-color);
             font-weight: 600;
@@ -168,7 +182,7 @@
             position: relative;
             padding-bottom: 8px;
         }
-        
+
         .nav-links a::after {
             content: '';
             position: absolute;
@@ -182,13 +196,16 @@
             transition: width var(--transition-speed) ease;
         }
 
-        .nav-links a:hover, .nav-links a.active {
+        .nav-links a:hover,
+        .nav-links a.active {
             color: var(--secondary-color);
         }
-        .nav-links a:hover::after, .nav-links a.active::after {
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
             width: 60%;
         }
-        
+
         .menu-toggle {
             display: none;
             font-size: 1.8rem;
@@ -212,6 +229,7 @@
             position: relative;
             padding-top: 80px;
         }
+
         .hero-content {
             max-width: 850px;
             animation: fadeInHeroContent 1.2s ease-out 0.3s forwards;
@@ -219,8 +237,15 @@
         }
 
         @keyframes fadeInHeroContent {
-            from { opacity: 0; transform: translateY(40px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .hero .upcoming-badge {
@@ -233,7 +258,7 @@
             margin-bottom: 25px;
             font-size: 1.1rem;
             letter-spacing: 0.5px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         .hero h1 {
@@ -243,6 +268,7 @@
             line-height: 1.2;
             letter-spacing: -1px;
         }
+
         .hero h1 span {
             color: var(--secondary-color);
             display: block;
@@ -254,7 +280,7 @@
         .hero p.lead {
             font-size: 1.3rem;
             margin-bottom: 40px;
-            color: rgba(255,255,255,0.9);
+            color: rgba(255, 255, 255, 0.9);
             font-weight: 300;
         }
 
@@ -266,49 +292,68 @@
             font-size: 2.5rem;
             animation: bounceArrow 2s infinite;
         }
+
         .hero-arrow a {
             color: var(--light-text);
             text-decoration: none;
             opacity: 0.8;
             transition: opacity var(--transition-speed);
         }
+
         .hero-arrow a:hover {
             opacity: 1;
         }
 
         @keyframes bounceArrow {
-            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-            40% { transform: translateX(-50%) translateY(-20px); }
-            60% { transform: translateX(-50%) translateY(-10px); }
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+
+            40% {
+                transform: translateX(-50%) translateY(-20px);
+            }
+
+            60% {
+                transform: translateX(-50%) translateY(-10px);
+            }
         }
 
         /* --- About Section --- */
         #about {
             background-color: var(--light-bg);
         }
+
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 50px;
             align-items: center;
         }
+
         .about-text h3 {
             font-size: 2.2rem;
             color: var(--primary-color);
             margin-bottom: 25px;
             font-weight: 600;
         }
+
         .about-text p {
             margin-bottom: 20px;
             color: var(--grey-text);
             font-size: 1.05rem;
         }
+
         .about-image img {
             width: 100%;
             border-radius: 12px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
         }
-        
+
         .highlights-list {
             list-style: none;
             padding-left: 0;
@@ -317,6 +362,7 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 15px;
         }
+
         .highlights-list li {
             padding-left: 35px;
             position: relative;
@@ -325,6 +371,7 @@
             color: var(--dark-text);
             font-weight: 500;
         }
+
         .highlights-list li::before {
             content: '✔';
             color: var(--secondary-color);
@@ -337,12 +384,13 @@
 
 
         /* --- Apartments Info Section --- */
-        .apartments-grid { 
+        .apartments-grid {
             display: grid;
-            grid-template-columns: minmax(320px, 1fr); 
-            justify-content: center; 
+            grid-template-columns: minmax(320px, 1fr);
+            justify-content: center;
             gap: 35px;
         }
+
         .apartment-card {
             background-color: #fff;
             border-radius: 12px;
@@ -351,46 +399,54 @@
             transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
             display: flex;
             flex-direction: column;
-            max-width: 600px; 
-            margin: 0 auto; 
+            max-width: 600px;
+            margin: 0 auto;
         }
+
         .apartment-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
         }
+
         .apartment-card-image-wrapper {
             width: 100%;
-            height: 280px; 
+            height: 280px;
             overflow: hidden;
         }
+
         .apartment-card img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.4s ease;
         }
+
         .apartment-card:hover img {
             transform: scale(1.05);
         }
+
         .apartment-card-content {
             padding: 30px;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
         }
+
         .apartment-card h3 {
             font-size: 1.8rem;
             color: var(--primary-color);
             margin-bottom: 10px;
             font-weight: 600;
         }
+
         .apartment-card .area-details {
             font-size: 1.1rem;
             font-weight: 500;
             color: var(--secondary-color);
             margin-bottom: 8px;
         }
-         .apartment-card .area-details span {
+
+        .apartment-card .area-details span {
             display: block;
             font-size: 0.95rem;
             color: var(--grey-text);
@@ -403,6 +459,7 @@
             margin-bottom: 20px;
             margin-top: 15px;
         }
+
         .apartment-card ul li {
             margin-bottom: 10px;
             color: var(--grey-text);
@@ -410,6 +467,7 @@
             align-items: center;
             font-size: 0.95rem;
         }
+
         .apartment-card ul li svg {
             margin-right: 10px;
             color: var(--primary-color);
@@ -417,28 +475,32 @@
             height: 20px;
             flex-shrink: 0;
         }
+
         .apartment-card .btn {
-            margin-top: auto; 
+            margin-top: auto;
             align-self: flex-start;
         }
 
         /* --- Specifications Section --- */
         #specifications {
-            background-color: #fff; 
+            background-color: #fff;
         }
+
         .specifications-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-top: 30px;
         }
+
         .spec-item {
-            background-color: var(--light-bg); 
+            background-color: var(--light-bg);
             padding: 25px;
             border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             border-left: 4px solid var(--secondary-color);
         }
+
         .spec-item h4 {
             font-size: 1.2rem;
             color: var(--primary-color);
@@ -446,6 +508,7 @@
             text-transform: uppercase;
             font-weight: 600;
         }
+
         .spec-item p {
             font-size: 0.95rem;
             color: var(--grey-text);
@@ -458,12 +521,14 @@
         #floor-plans {
             background-color: var(--light-bg);
         }
+
         .floor-plan-tabs {
             display: flex;
             justify-content: center;
             margin-bottom: 40px;
             gap: 15px;
         }
+
         .tab-button {
             padding: 10px 25px;
             font-size: 1rem;
@@ -475,26 +540,39 @@
             color: var(--grey-text);
             transition: all var(--transition-speed) ease;
         }
+
         .tab-button.active {
             background-color: var(--secondary-color);
             color: var(--dark-text);
             border-color: var(--secondary-color);
-            box-shadow: 0 4px 10px rgba(255,171,0,0.3);
+            box-shadow: 0 4px 10px rgba(255, 171, 0, 0.3);
         }
+
         .tab-button:hover:not(.active) {
             background-color: #d1d5db;
         }
+
         .floor-plan-content {
             display: none;
             animation: fadeInTabContent 0.5s ease;
         }
+
         .floor-plan-content.active {
             display: block;
         }
+
         @keyframes fadeInTabContent {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+
         .floor-plan-image-container {
             text-align: center;
             background: #fff;
@@ -502,22 +580,26 @@
             border-radius: 12px;
             box-shadow: var(--card-shadow);
         }
+
         .floor-plan-image-container img {
             max-width: 100%;
-            max-height: 600px; 
+            max-height: 600px;
             height: auto;
             border-radius: 8px;
             border: 1px solid var(--border-color);
         }
+
         .floor-plan-details {
             margin-top: 20px;
             text-align: center;
         }
+
         .floor-plan-details h4 {
             font-size: 1.5rem;
             color: var(--primary-color);
             margin-bottom: 10px;
         }
+
         .floor-plan-details p {
             color: var(--grey-text);
             font-size: 1.1rem;
@@ -530,13 +612,15 @@
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
         }
+
         .gallery-item {
             overflow: hidden;
             border-radius: 10px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
             position: relative;
             cursor: pointer;
         }
+
         .gallery-item img {
             width: 100%;
             height: 280px;
@@ -544,10 +628,12 @@
             display: block;
             transition: transform 0.4s ease, filter 0.4s ease;
         }
+
         .gallery-item:hover img {
             transform: scale(1.1);
             filter: brightness(0.8);
         }
+
         .gallery-item .overlay {
             position: absolute;
             top: 0;
@@ -564,10 +650,11 @@
             font-size: 1.5rem;
             font-weight: bold;
         }
+
         .gallery-item:hover .overlay {
             opacity: 1;
         }
-        
+
         /* Modal for Gallery Images */
         .modal {
             display: none;
@@ -579,14 +666,16 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgba(0,0,0,0.9);
+            background-color: rgba(0, 0, 0, 0.9);
         }
+
         .modal-content {
             margin: auto;
             display: block;
             max-width: 85%;
             max-height: 85%;
         }
+
         .close-modal {
             position: absolute;
             top: 20px;
@@ -597,6 +686,7 @@
             transition: 0.3s;
             cursor: pointer;
         }
+
         .close-modal:hover,
         .close-modal:focus {
             color: #bbb;
@@ -608,15 +698,17 @@
         #location {
             background-color: var(--light-bg);
         }
+
         .location-content {
             display: grid;
             grid-template-columns: 2fr 1fr;
             gap: 40px;
             align-items: flex-start;
         }
+
         .location-map {
             height: 450px;
-            background-color: #e0e0e0; 
+            background-color: #e0e0e0;
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -624,42 +716,49 @@
             font-style: italic;
             color: var(--grey-text);
             box-shadow: var(--card-shadow);
-            overflow: hidden; 
+            overflow: hidden;
         }
+
         .location-map iframe {
             width: 100%;
             height: 100%;
             border: 0;
         }
+
         .location-details-card {
             background: #fff;
             padding: 30px;
             border-radius: 12px;
             box-shadow: var(--card-shadow);
         }
+
         .location-details-card h3 {
             font-size: 1.8rem;
             color: var(--primary-color);
             margin-bottom: 20px;
         }
+
         .location-details-card p {
             margin-bottom: 18px;
             font-size: 1.05rem;
             color: var(--grey-text);
             display: flex;
-            align-items: flex-start; 
+            align-items: flex-start;
         }
+
         .location-details-card p strong {
             color: var(--dark-text);
         }
+
         .location-details-card p svg {
             margin-right: 12px;
             color: var(--secondary-color);
             width: 22px;
             height: 22px;
             flex-shrink: 0;
-            margin-top: 3px; 
+            margin-top: 3px;
         }
+
         .location-details-card .contact-highlight a {
             font-size: 1.4rem;
             font-weight: bold;
@@ -667,6 +766,7 @@
             text-decoration: none;
             transition: color var(--transition-speed);
         }
+
         .location-details-card .contact-highlight a:hover {
             color: var(--primary-color);
         }
@@ -675,26 +775,30 @@
         /* --- Contact Section --- */
         .contact-wrapper {
             display: grid;
-            grid-template-columns: 1fr 1.5fr; 
+            grid-template-columns: 1fr 1.5fr;
             gap: 40px;
             background-color: #fff;
             padding: 50px;
             border-radius: 12px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
         }
+
         .contact-info h3 {
             font-size: 2rem;
             color: var(--primary-color);
             margin-bottom: 25px;
         }
+
         .contact-info .contact-block {
             margin-bottom: 25px;
         }
+
         .contact-info .contact-block h4 {
             font-size: 1.2rem;
             color: var(--primary-color);
             margin-bottom: 8px;
         }
+
         .contact-info p {
             margin-bottom: 10px;
             color: var(--grey-text);
@@ -702,6 +806,7 @@
             align-items: center;
             font-size: 1.05rem;
         }
+
         .contact-info p svg {
             margin-right: 15px;
             color: var(--secondary-color);
@@ -709,13 +814,15 @@
             height: 24px;
             flex-shrink: 0;
         }
+
         .contact-info .phone-number {
-            font-size: 1.3rem; 
+            font-size: 1.3rem;
             font-weight: bold;
             color: var(--primary-color);
             text-decoration: none;
             transition: color var(--transition-speed);
         }
+
         .contact-info .phone-number:hover {
             color: var(--secondary-color);
         }
@@ -726,6 +833,7 @@
             font-weight: 500;
             color: var(--dark-text);
         }
+
         .contact-form input,
         .contact-form textarea {
             width: 100%;
@@ -737,16 +845,19 @@
             font-size: 1rem;
             transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
         }
+
         .contact-form input:focus,
         .contact-form textarea:focus {
             outline: none;
             border-color: var(--secondary-color);
             box-shadow: 0 0 0 3px rgba(255, 171, 0, 0.25);
         }
+
         .contact-form textarea {
             resize: vertical;
             min-height: 130px;
         }
+
         .contact-form .btn {
             width: auto;
         }
@@ -754,48 +865,58 @@
         /* --- Footer --- */
         .footer {
             background-color: var(--primary-color);
-            color: rgba(248, 249, 250, 0.8); 
+            color: rgba(248, 249, 250, 0.8);
             text-align: center;
             padding: 50px 20px;
         }
+
         .footer .logo {
             color: var(--light-text);
             margin-bottom: 15px;
             display: inline-block;
             font-size: 2rem;
         }
+
         .footer .logo span {
             color: var(--secondary-color);
         }
+
         .footer p {
             margin: 5px 0;
             font-size: 0.9rem;
         }
+
         .footer a {
             color: var(--secondary-color);
             text-decoration: none;
             font-weight: 500;
         }
+
         .footer a:hover {
             text-decoration: underline;
         }
+
         .footer-social-links {
             margin: 15px 0;
         }
+
         .footer-social-links a {
             color: rgba(248, 249, 250, 0.8);
             margin: 0 10px;
             font-size: 1.3rem;
             transition: color var(--transition-speed);
         }
+
         .footer-social-links a:hover {
             color: var(--secondary-color);
         }
+
         .footer-regulatory-info {
             margin-top: 15px;
             font-size: 0.85rem;
             color: rgba(248, 249, 250, 0.7);
         }
+
         .footer-regulatory-info span {
             margin: 0 10px;
             display: inline-block;
@@ -808,101 +929,212 @@
             transform: translateY(60px);
             transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
+
         .fade-in-section.is-visible {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         /* --- Responsive Design --- */
         @media (max-width: 992px) {
-            .section-title { font-size: 2.4rem; }
-            .hero h1 { font-size: 3rem; }
-            .hero h1 span { font-size: 1.8rem; }
-            .hero p.lead { font-size: 1.1rem; }
+            .section-title {
+                font-size: 2.4rem;
+            }
 
-            .about-content { grid-template-columns: 1fr; }
-            .about-image { order: -1; margin-bottom: 30px; }
-            .highlights-list { grid-template-columns: 1fr; } 
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero h1 span {
+                font-size: 1.8rem;
+            }
+
+            .hero p.lead {
+                font-size: 1.1rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image {
+                order: -1;
+                margin-bottom: 30px;
+            }
+
+            .highlights-list {
+                grid-template-columns: 1fr;
+            }
 
 
-            .location-content { grid-template-columns: 1fr; }
-            .location-map { margin-bottom: 30px; height: 350px;}
+            .location-content {
+                grid-template-columns: 1fr;
+            }
 
-            .contact-wrapper { grid-template-columns: 1fr; padding: 30px; }
-            .contact-info { text-align: center; }
-            .contact-info p { justify-content: center; }
-            .contact-info .contact-block h4 { text-align: center; }
+            .location-map {
+                margin-bottom: 30px;
+                height: 350px;
+            }
+
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+                padding: 30px;
+            }
+
+            .contact-info {
+                text-align: center;
+            }
+
+            .contact-info p {
+                justify-content: center;
+            }
+
+            .contact-info .contact-block h4 {
+                text-align: center;
+            }
         }
 
         @media (max-width: 768px) {
-            .container { padding: 0 15px; }
-            .section { padding: 60px 0; }
-            .section-title { font-size: 2rem; }
-            .section-subtitle { font-size: 1rem; margin-bottom: 40px;}
+            .container {
+                padding: 0 15px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+                margin-bottom: 40px;
+            }
 
             .nav-links {
                 display: none;
                 flex-direction: column;
                 width: 100%;
                 position: absolute;
-                top: 100%; 
+                top: 100%;
                 left: 0;
                 background-color: #fff;
-                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
                 padding: 10px 0;
             }
-            .nav-links.active { display: flex; }
+
+            .nav-links.active {
+                display: flex;
+            }
+
             .nav-links li {
                 margin: 0;
                 text-align: center;
             }
+
             .nav-links a {
                 display: block;
                 padding: 12px 20px;
                 width: 100%;
             }
-            .nav-links a::after { display: none; }
-            .menu-toggle { display: block; }
 
-            .hero { min-height: 550px; }
-            .hero h1 { font-size: 2.5rem; }
-            .hero h1 span { font-size: 1.5rem; }
+            .nav-links a::after {
+                display: none;
+            }
 
-            .apartments-grid { grid-template-columns: 1fr; } 
-            .apartment-card h3 { font-size: 1.5rem; }
+            .menu-toggle {
+                display: block;
+            }
 
-            .specifications-grid { grid-template-columns: 1fr; }
+            .hero {
+                min-height: 550px;
+            }
 
-            .gallery-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;}
-            .gallery-item img { height: 220px; }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
 
-            .floor-plan-tabs { flex-wrap: wrap; gap: 10px; }
-            .tab-button { font-size: 0.9rem; padding: 8px 18px; }
+            .hero h1 span {
+                font-size: 1.5rem;
+            }
+
+            .apartments-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .apartment-card h3 {
+                font-size: 1.5rem;
+            }
+
+            .specifications-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 15px;
+            }
+
+            .gallery-item img {
+                height: 220px;
+            }
+
+            .floor-plan-tabs {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .tab-button {
+                font-size: 0.9rem;
+                padding: 8px 18px;
+            }
         }
-        
-        @media (max-width: 480px) {
-            .hero h1 { font-size: 2rem; }
-            .hero h1 span { font-size: 1.3rem; }
-            .hero .upcoming-badge { font-size: 0.9rem; padding: 8px 18px; }
-            .hero p.lead { font-size: 1rem; }
-            .btn { padding: 12px 25px; font-size: 0.9rem; }
 
-            .footer .logo { font-size: 1.6rem; }
-            .footer p { font-size: 0.8rem; }
-            .footer-social-links a { font-size: 1.1rem; margin: 0 8px; }
-            .footer-regulatory-info span { display: block; margin: 5px 0; }
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero h1 span {
+                font-size: 1.3rem;
+            }
+
+            .hero .upcoming-badge {
+                font-size: 0.9rem;
+                padding: 8px 18px;
+            }
+
+            .hero p.lead {
+                font-size: 1rem;
+            }
+
+            .btn {
+                padding: 12px 25px;
+                font-size: 0.9rem;
+            }
+
+            .footer .logo {
+                font-size: 1.6rem;
+            }
+
+            .footer p {
+                font-size: 0.8rem;
+            }
+
+            .footer-social-links a {
+                font-size: 1.1rem;
+                margin: 0 8px;
+            }
+
+            .footer-regulatory-info span {
+                display: block;
+                margin: 5px 0;
+            }
         }
     </style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XJDZW98WQZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-XJDZW98WQZ');
-</script>
 <body>
 
 
@@ -911,7 +1143,12 @@
         <div class="container navbar-container">
             <a href="#hero" class="logo">Bangaru <span>Heights</span></a>
             <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
-                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
             </button>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#hero" class="active">Home</a></li>
@@ -931,12 +1168,16 @@
         <div class="container hero-content">
             <div class="upcoming-badge">UPCOMING PROJECT</div>
             <h1>Welcome to Bangaru Heights <span>Your Dream 3BHK Home in Palakolu</span></h1>
-            <p class="lead">Experience unparalleled luxury and modern living. Discover exquisitely designed 3 BHK lifestyle apartments.</p>
+            <p class="lead">Experience unparalleled luxury and modern living. Discover exquisitely designed 3 BHK
+                lifestyle apartments.</p>
             <a href="#contact" class="btn">Enquire Now</a>
         </div>
         <div class="hero-arrow">
             <a href="#about">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
             </a>
         </div>
     </section>
@@ -945,14 +1186,21 @@
     <section id="about" class="section fade-in-section">
         <div class="container">
             <h2 class="section-title">About Bangaru Heights</h2>
-            <p class="section-subtitle">Crafted for comfort, designed for life. Bangaru Heights is more than just an apartment complex; it's a community where modern amenities meet serene living with a clear title and 100% Vasthu compliance.</p>
+            <p class="section-subtitle">Crafted for comfort, designed for life. Bangaru Heights is more than just an
+                apartment complex; it's a community where modern amenities meet serene living with a clear title and
+                100% Vasthu compliance.</p>
             <div class="about-content">
                 <div class="about-text">
                     <h3>Experience Elevated Living</h3>
-                    <p>Bangaru Heights is a prestigious upcoming residential project located in the vibrant city of Palakolu. We are dedicated to creating homes that blend contemporary architecture with thoughtful design, ensuring a lifestyle of comfort and convenience.</p>
-                    <p>Our project features G+4 floors, offering an exclusive collection of spacious 3 bedroom apartments. Each unit is meticulously planned to maximize space, natural light, and ventilation, providing a perfect sanctuary for you and your family.</p>
-                    
-                    <h4 style="color: var(--primary-color); margin-top: 30px; margin-bottom: 15px; font-size: 1.5rem;">Key Highlights:</h4>
+                    <p>Bangaru Heights is a prestigious upcoming residential project located in the vibrant city of
+                        Palakolu. We are dedicated to creating homes that blend contemporary architecture with
+                        thoughtful design, ensuring a lifestyle of comfort and convenience.</p>
+                    <p>Our project features G+4 floors, offering an exclusive collection of spacious 3 bedroom
+                        apartments. Each unit is meticulously planned to maximize space, natural light, and ventilation,
+                        providing a perfect sanctuary for you and your family.</p>
+
+                    <h4 style="color: var(--primary-color); margin-top: 30px; margin-bottom: 15px; font-size: 1.5rem;">
+                        Key Highlights:</h4>
                     <ul class="highlights-list">
                         <li>Lifestyle Apartments</li>
                         <li>Exclusive 3 BHK Flats</li>
@@ -967,7 +1215,7 @@
                     </ul>
                 </div>
                 <div class="about-image">
-                    <img src="https://via.placeholder.com/500x450/e0e0e0/969696?text=Modern+Building+Concept+Art" alt="Bangaru Heights Concept">
+                    <img src="/images/east_facing.jpg" alt="Bangaru Heights Concept">
                 </div>
             </div>
         </div>
@@ -977,24 +1225,47 @@
     <section id="apartments" class="section">
         <div class="container">
             <h2 class="section-title">Our Exclusive 3BHK Apartments</h2>
-            <p class="section-subtitle">Thoughtfully designed 3 bedroom apartments offering spacious layouts, modern finishes, and dedicated amenities for each flat.</p>
+            <p class="section-subtitle">Thoughtfully designed 3 bedroom apartments offering spacious layouts, modern
+                finishes, and dedicated amenities for each flat.</p>
             <div class="apartments-grid">
                 <div class="apartment-card fade-in-section">
                     <div class="apartment-card-image-wrapper">
-                        <img src="https://via.placeholder.com/600x300/d1d5db/888888?text=Spacious+3+BHK+Interior+Concept" alt="3 Bedroom Apartment">
+                        <img src="/images/full_apartmnet.jpg" alt="3 Bedroom Apartment">
                     </div>
                     <div class="apartment-card-content">
                         <h3>3 Bedroom Grandeur</h3>
                         <p class="area-details">Super Built-up Area: 1847 SFT</p>
                         <p class="area-details">Carpet Area: 1181 SFT</p>
                         <p class="area-details">Un-Divided Site Area: 71.83 Sq. Yards</p>
-                        
+
                         <ul>
-                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg> Expansive Living & Dining Area</li>
-                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Three Well-Ventilated Bedrooms</li>
-                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9V4h-9v16zM4 20h4V4H4v16z"/></svg> Modern Kitchen with Utility Area</li>
-                            <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg> Utility, Balcony, Ext. Walls Area: ~240 SFT</li>
-                            <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-square"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg> Dedicated Parking Area: 426 SFT per flat</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                                </svg> Expansive Living & Dining Area</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                                </svg> Three Well-Ventilated Bedrooms</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M12 20h9V4h-9v16zM4 20h4V4H4v16z" />
+                                </svg> Modern Kitchen with Utility Area</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-maximize">
+                                    <path
+                                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3">
+                                    </path>
+                                </svg> Utility, Balcony, Ext. Walls Area: ~240 SFT</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-square">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                </svg> Dedicated Parking Area: 426 SFT per flat</li>
                         </ul>
                         <a href="#floor-plans" class="btn btn-outline">View Layouts</a>
                     </div>
@@ -1007,24 +1278,77 @@
     <section id="specifications" class="section fade-in-section">
         <div class="container">
             <h2 class="section-title">Project Specifications</h2>
-            <p class="section-subtitle">Details of the high-quality materials and features used in Bangaru Heights, ensuring durability and a premium living experience.</p>
+            <p class="section-subtitle">Details of the high-quality materials and features used in Bangaru Heights,
+                ensuring durability and a premium living experience.</p>
             <div class="specifications-grid">
-                <div class="spec-item"><h4>STRUCTURE</h4><p>Reinforced Cement Concrete framed structures.</p></div>
-                <div class="spec-item"><h4>SUPER STRUCTURE</h4><p>9"/4½" Red burnt Brick walls in Cement mortars.</p></div>
-                <div class="spec-item"><h4>MAIN DOOR</h4><p>Main Door cum Window: Teak Wood frame with Teak Wood Shutter.</p></div>
-                <div class="spec-item"><h4>OTHER DOORS</h4><p>Granite Frames & Teak Veneer Doors.</p></div>
-                <div class="spec-item"><h4>WINDOWS</h4><p>3 Track UPVC Windows with Matt Glass and Mosquito Mesh.</p></div>
-                <div class="spec-item"><h4>PLASTERING</h4><p>Interior Walls & Ceiling with Wallcare Smooth finish.</p></div>
-                <div class="spec-item"><h4>FLOORING</h4><p>Good Quality Verified Flooring with 1 metre x 1 metre Tiles.</p></div>
-                <div class="spec-item"><h4>KITCHEN</h4><p>Polished Black Granite stone for Platform with Stainless Steel Sink & 2'x4' Ceramic Tiles and dado upto 4' height above the Platform.</p></div>
-                <div class="spec-item"><h4>WARDROBES</h4><p>Provision for Wardrobes in all Bed Rooms and Kitchen.</p></div>
-                <div class="spec-item"><h4>TOILETS & BATHROOMS</h4><p>Branded Sanitary Ware, Hindware or Jhonson or other branded commodes. Provision for shower with hot and cold water mixing, dado upto 7' height, Two Wash Basins per flat.</p></div>
-                <div class="spec-item"><h4>ELECTRICAL</h4><p>Concealed Copper wiring with necessary Points and Switch Boards and provision for Electrical Charging Points in Parking Area, TV and WIFI & Inverter wiring & Home Theater Wiring.</p></div>
-                <div class="spec-item"><h4>LIFT</h4><p>Lift with 6 Passenger Capacity.</p></div>
-                <div class="spec-item"><h4>PLUMBING</h4><p>Plumbing with standard UPVC & CPVC pipes with concealed pipe-lines for Hot & Cold Water.</p></div>
-                <div class="spec-item"><h4>PAINTS</h4><p>Enamel Paint for Wood Work and Grills. Wallcare for inside and outside walls.</p></div>
-                <div class="spec-item"><h4>WATER</h4><p>Overhead Storage Tanks for bore well water & Municipal Water.</p></div>
-                <div class="spec-item"><h4>EXTRAS</h4><p>Registration Charges, GST, Labour Cess, AP Transco, Generator, Municipal Water Connection Charges and any new Govt. Taxes extra. Any changes or additional works will be charged extra cost.</p></div>
+                <div class="spec-item">
+                    <h4>STRUCTURE</h4>
+                    <p>Reinforced Cement Concrete framed structures.</p>
+                </div>
+                <div class="spec-item">
+                    <h4>SUPER STRUCTURE</h4>
+                    <p>9"/4½" Red burnt Brick walls in Cement mortars.</p>
+                </div>
+                <div class="spec-item">
+                    <h4>MAIN DOOR</h4>
+                    <p>Main Door cum Window: Teak Wood frame with Teak Wood Shutter.</p>
+                </div>
+                <div class="spec-item">
+                    <h4>OTHER DOORS</h4>
+                    <p>Granite Frames & Teak Veneer Doors.</p>
+                </div>
+                <div class="spec-item">
+                    <h4>WINDOWS</h4>
+                    <p>3 Track UPVC Windows with Matt Glass and Mosquito Mesh.</p>
+                </div>
+                <div class="spec-item">
+                    <h4>PLASTERING</h4>
+                    <p>Interior Walls & Ceiling with Wallcare Smooth finish.</p>
+                </div>
+                <div class="spec-item">
+                    <h4>FLOORING</h4>
+                    <p>Good Quality Verified Flooring with 1 metre x 1 metre Tiles.</p>
+                </div>
+                <div class="spec-item">
+                    <h4>KITCHEN</h4>
+                    <p>Polished Black Granite stone for Platform with Stainless Steel Sink & 2'x4' Ceramic Tiles and
+                        dado upto 4' height above the Platform.</p>
+                </div>
+                <div class="spec-item">
+                    <h4>WARDROBES</h4>
+                    <p>Provision for Wardrobes in all Bed Rooms and Kitchen.</p>
+                </div>
+                <div class="spec-item">
+                    <h4>TOILETS & BATHROOMS</h4>
+                    <p>Branded Sanitary Ware, Hindware or Jhonson or other branded commodes. Provision for shower with
+                        hot and cold water mixing, dado upto 7' height, Two Wash Basins per flat.</p>
+                </div>
+                <div class="spec-item">
+                    <h4>ELECTRICAL</h4>
+                    <p>Concealed Copper wiring with necessary Points and Switch Boards and provision for Electrical
+                        Charging Points in Parking Area, TV and WIFI & Inverter wiring & Home Theater Wiring.</p>
+                </div>
+                <div class="spec-item">
+                    <h4>LIFT</h4>
+                    <p>Lift with 6 Passenger Capacity.</p>
+                </div>
+                <div class="spec-item">
+                    <h4>PLUMBING</h4>
+                    <p>Plumbing with standard UPVC & CPVC pipes with concealed pipe-lines for Hot & Cold Water.</p>
+                </div>
+                <div class="spec-item">
+                    <h4>PAINTS</h4>
+                    <p>Enamel Paint for Wood Work and Grills. Wallcare for inside and outside walls.</p>
+                </div>
+                <div class="spec-item">
+                    <h4>WATER</h4>
+                    <p>Overhead Storage Tanks for bore well water & Municipal Water.</p>
+                </div>
+                <div class="spec-item">
+                    <h4>EXTRAS</h4>
+                    <p>Registration Charges, GST, Labour Cess, AP Transco, Generator, Municipal Water Connection Charges
+                        and any new Govt. Taxes extra. Any changes or additional works will be charged extra cost.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -1033,8 +1357,9 @@
     <section id="floor-plans" class="section fade-in-section">
         <div class="container">
             <h2 class="section-title">3BHK Apartment Layouts</h2>
-            <p class="section-subtitle">Explore the detailed East and West facing floor plans for our 1847 SFT 3BHK apartments. Click to enlarge.</p>
-            
+            <p class="section-subtitle">Explore the detailed East and West facing floor plans for our 1847 SFT 3BHK
+                apartments. Click to enlarge.</p>
+
             <div class="floor-plan-tabs">
                 <button class="tab-button active" data-tab="plan-west">West Facing Layout</button>
                 <button class="tab-button" data-tab="plan-east">East Facing Layout</button>
@@ -1042,7 +1367,8 @@
 
             <div id="plan-west" class="floor-plan-content active">
                 <div class="floor-plan-image-container">
-                    <img src="https://via.placeholder.com/800x1000/eeeeee/969696?text=West+Facing+3BHK+Layout+(1847+Sft)" alt="West Facing 3 BHK Floor Plan - Bangaru Heights" class="modal-trigger">
+                    <img src="/images/west_facing.jpg" alt="West Facing 3 BHK Floor Plan - Bangaru Heights"
+                        class="modal-trigger">
                     <div class="floor-plan-details">
                         <h4>West Facing - 3BHK - 1847 SFT</h4>
                         <p>Thoughtfully designed for optimal space utilization and natural light.</p>
@@ -1051,8 +1377,9 @@
             </div>
             <div id="plan-east" class="floor-plan-content">
                 <div class="floor-plan-image-container">
-                    <img src="https://via.placeholder.com/800x1000/f0f0f0/969696?text=East+Facing+3BHK+Layout+(1847+Sft)" alt="East Facing 3 BHK Floor Plan - Bangaru Heights" class="modal-trigger">
-                     <div class="floor-plan-details">
+                    <img src="/images/east_facing.jpg" alt="East Facing 3 BHK Floor Plan - Bangaru Heights"
+                        class="modal-trigger">
+                    <div class="floor-plan-details">
                         <h4>East Facing - 3BHK - 1847 SFT</h4>
                         <p>Spacious layout embracing morning sunlight and positive energy.</p>
                     </div>
@@ -1065,14 +1392,16 @@
     <section id="gallery" class="section fade-in-section">
         <div class="container">
             <h2 class="section-title">Project Gallery</h2>
-            <p class="section-subtitle">A glimpse into the modern aesthetics and quality of Bangaru Heights. (Placeholder images - please replace with actual project photos)</p>
+            <p class="section-subtitle">A glimpse into the modern aesthetics and quality of Bangaru Heights.
+                (Placeholder images - please replace with actual project photos)</p>
             <div class="gallery-grid">
                 <div class="gallery-item modal-trigger">
-                    <img src="https://via.placeholder.com/400x300/c7d2fe/6366f1?text=Exterior+View+1" alt="Apartment Exterior 1">
+                    <img src="/images/full_apartmnet.jpg" alt="Apartment Exterior 1">
                     <div class="overlay">View Image</div>
                 </div>
                 <div class="gallery-item modal-trigger">
-                    <img src="https://via.placeholder.com/400x300/ddd6fe/7c3aed?text=Living+Room+Concept" alt="Living Room">
+                    <img src="https://via.placeholder.com/400x300/ddd6fe/7c3aed?text=Living+Room+Concept"
+                        alt="Living Room">
                     <div class="overlay">View Image</div>
                 </div>
                 <div class="gallery-item modal-trigger">
@@ -1083,12 +1412,14 @@
                     <img src="https://via.placeholder.com/400x300/bbf7d0/16a34a?text=Kitchen+Mockup" alt="Kitchen">
                     <div class="overlay">View Image</div>
                 </div>
-                 <div class="gallery-item modal-trigger">
-                    <img src="https://via.placeholder.com/400x300/bfdbfe/2563eb?text=Common+Area+View" alt="Common Area">
+                <div class="gallery-item modal-trigger">
+                    <img src="https://via.placeholder.com/400x300/bfdbfe/2563eb?text=Common+Area+View"
+                        alt="Common Area">
                     <div class="overlay">View Image</div>
                 </div>
                 <div class="gallery-item modal-trigger">
-                    <img src="https://via.placeholder.com/400x300/fed7aa/f97316?text=Site+Progress+View" alt="Site Progress">
+                    <img src="https://via.placeholder.com/400x300/fed7aa/f97316?text=Site+Progress+View"
+                        alt="Site Progress">
                     <div class="overlay">View Image</div>
                 </div>
             </div>
@@ -1105,23 +1436,42 @@
     <section id="location" class="section fade-in-section">
         <div class="container">
             <h2 class="section-title">Our Location</h2>
-            <p class="section-subtitle">Conveniently situated in Palakolu, offering easy access to key landmarks and necessities.</p>
+            <p class="section-subtitle">Conveniently situated in Palakolu, offering easy access to key landmarks and
+                necessities.</p>
             <div class="location-content">
                 <div class="location-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3829.371726214058!2d81.73000000000000!3d16.52000000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37cd0e5f8b965b%3A0x8e6b3c8a5ebf6674!2sSBI%20Colony%2C%20Palakollu%2C%20Andhra%20Pradesh%20534260!5e0!3m2!1sen!2sin!4v1678888888888!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bangaru Heights Location Map"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3829.371726214058!2d81.73000000000000!3d16.52000000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37cd0e5f8b965b%3A0x8e6b3c8a5ebf6674!2sSBI%20Colony%2C%20Palakollu%2C%20Andhra%20Pradesh%20534260!5e0!3m2!1sen!2sin!4v1678888888888!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="Bangaru Heights Location Map"></iframe>
                 </div>
                 <div class="location-details-card">
                     <h3>Bangaru Heights, Palakolu</h3>
                     <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                        <div><strong>Address:</strong><br>SBI Colony Extn Road, Ward No 17, SBI Colony, Palakollu, Andhra Pradesh - 534260.</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    <div><strong>Address:</strong><br>SBI Colony Extn Road, Ward No 17, SBI Colony, Palakollu, Andhra
+                        Pradesh - 534260.</div>
                     </p>
                     <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-                        <div><strong>Connectivity:</strong><br>Excellent connectivity to main roads, markets, schools, and hospitals.</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    <div><strong>Connectivity:</strong><br>Excellent connectivity to main roads, markets, schools, and
+                        hospitals.</div>
                     </p>
                     <p class="contact-highlight">
-                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
                         Get in touch: <a href="tel:+918297266888">82972 66888</a>
                     </p>
                 </div>
@@ -1133,39 +1483,65 @@
     <section id="contact" class="section">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Have questions or want to book a site visit? Contact us today! We're here to help you find your perfect home at Bangaru Heights.</p>
+            <p class="section-subtitle">Have questions or want to book a site visit? Contact us today! We're here to
+                help you find your perfect home at Bangaru Heights.</p>
             <div class="contact-wrapper">
                 <div class="contact-info">
                     <div class="contact-block">
                         <h4>Project Promoters & Owners:</h4>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
                             Bangaru Krishna Kishore
                         </p>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
                             <a href="tel:+918297266888" class="phone-number">82972 66888</a>
                         </p>
                     </div>
-                     <div class="contact-block">
+                    <div class="contact-block">
                         <h4>Developers:</h4>
-                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
                             Sri Sai Chaitannya Developers (Rajahmundry)
                         </p>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
                             Mr. Trimurtulu
                         </p>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
                             <a href="tel:+919177673666" class="phone-number">91776 73666</a>
                         </p>
                     </div>
                     <div class="contact-block">
                         <h4>Site Address:</h4>
                         <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
                             SBI Colony Extn Road, Ward No 17, SBI Colony, Palakollu - 534260.
                         </p>
                     </div>
@@ -1198,15 +1574,30 @@
             <p>Your new address for luxury living in Palakolu.</p>
             <p>An Upcoming Project poised to redefine modern living. Exclusively 3BHK Apartments.</p>
             <div class="footer-social-links">
-                <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
-                <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
-                <a href="https://wa.me/918297266888" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></a>
+                <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                        stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg></a>
+                <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                        stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg></a>
+                <a href="https://wa.me/918297266888" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24"
+                        width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                        </path>
+                    </svg></a>
             </div>
             <div class="footer-regulatory-info">
                 <span>BA No.: 1079/0131/B/PALAKOL/PSE/2021</span>
                 <span>AP RERA No.: PO5430472902</span>
             </div>
-            <p style="margin-top: 20px;">&copy; <span id="currentYear"></span> Bangaru Heights. All Rights Reserved. <br> Designed with <span style="color: var(--secondary-color); font-size: 1.2em;">&#10084;</span></p>
+            <p style="margin-top: 20px;">&copy; <span id="currentYear"></span> Bangaru Heights. All Rights Reserved.
+                <br> Designed with <span style="color: var(--secondary-color); font-size: 1.2em;">&#10084;</span></p>
         </div>
     </footer>
 
@@ -1250,11 +1641,11 @@
             let scrollY = window.pageYOffset;
             sections.forEach(current => {
                 const sectionHeight = current.offsetHeight;
-                const sectionTop = current.offsetTop - 100; 
+                const sectionTop = current.offsetTop - 100;
                 let sectionId = current.getAttribute('id');
-                
+
                 let navLink = document.querySelector('.nav-links a[href*=' + sectionId + ']');
-                if(navLink){ 
+                if (navLink) {
                     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
                         navLink.classList.add('active');
                     } else {
@@ -1263,15 +1654,15 @@
                 }
             });
         }
-        
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target); 
+                    observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.1 }); 
+        }, { threshold: 0.1 });
 
         document.querySelectorAll('.fade-in-section').forEach(section => {
             observer.observe(section);
@@ -1287,36 +1678,36 @@
                 button.classList.add('active');
                 const tabId = button.getAttribute('data-tab');
                 const targetContent = document.getElementById(tabId);
-                if(targetContent) targetContent.classList.add('active');
+                if (targetContent) targetContent.classList.add('active');
             });
         });
-        
+
         const modal = document.getElementById("imageModal");
         const modalImg = document.getElementById("modalImage");
         const galleryImages = document.querySelectorAll(".gallery-item.modal-trigger, .floor-plan-image-container img.modal-trigger");
         const closeModal = document.getElementById("closeModal");
 
         galleryImages.forEach(item => {
-            item.addEventListener('click', function() {
+            item.addEventListener('click', function () {
                 modal.style.display = "block";
                 modalImg.src = this.tagName === 'IMG' ? this.src : this.querySelector('img').src;
                 modalImg.alt = this.tagName === 'IMG' ? this.alt : this.querySelector('img').alt;
             });
         });
 
-        if(closeModal) {
-            closeModal.onclick = function() {
+        if (closeModal) {
+            closeModal.onclick = function () {
                 modal.style.display = "none";
             }
         }
-        if(modal) {
-            modal.onclick = function(event) {
+        if (modal) {
+            modal.onclick = function (event) {
                 if (event.target === modal) {
-                     modal.style.display = "none";
+                    modal.style.display = "none";
                 }
             }
         }
-        document.addEventListener('keydown', function(event) {
+        document.addEventListener('keydown', function (event) {
             if (event.key === "Escape" && modal && modal.style.display === "block") {
                 modal.style.display = "none";
             }
@@ -1327,7 +1718,7 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 if (this.hash !== "" && document.querySelector(this.hash)) {
-                     e.preventDefault();
+                    e.preventDefault();
                     document.querySelector(this.hash).scrollIntoView({
                         behavior: 'smooth'
                     });
@@ -1337,13 +1728,14 @@
 
         const contactForm = document.querySelector('.contact-form');
         if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
+            contactForm.addEventListener('submit', function (e) {
                 e.preventDefault();
                 console.log('Form submitted (dummy)');
                 alert('Thank you for your message! We will get back to you soon.');
-                this.reset(); 
+                this.reset();
             });
         }
     </script>
 </body>
+
 </html>
